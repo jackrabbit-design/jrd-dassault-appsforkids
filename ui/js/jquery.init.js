@@ -81,4 +81,13 @@ jQuery(function($){
         $('.ds_slider').toggleClass('active');
     })
 
+    $(window).on('load resize',function(){
+        if($(window).width() > 960){
+            var p = $('#banner #text').outerWidth() * 0.4;
+            $('#banner #text').css('padding-left',p+'px');
+        }else{
+            $('#banner #text').removeAttr('style');
+        }
+    })
+
 });
