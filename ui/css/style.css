@@ -91,6 +91,11 @@ body, input, button, textarea { -webkit-font-smoothing: antialiased; -moz-osx-fo
 /* ========================================================================= */
 /* !STYLES */
 /* ========================================================================= */
+html, body { font-family: '3ds', 'Lucida Sans', Lucida, Arial, sans-serif; }
+
+a { color: #3E9DD1; }
+a:hover { color: #E55758; }
+
 /* != SELECTION STYLES (Leaving these blank will show no indication of text selection) ===== */
 /* ::selection         { background: #aaa; color: #fff; } ::-moz-selection    { background: #aaa; color: #fff; } ::-webkit-selection { background: #aaa; color: #fff; }
 */
@@ -199,7 +204,7 @@ h6 { font: normal 24px/1.2 sans-serif; color: #f00; }
 .btn + .btn { margin-left: 5px; }
 
 #banner { height: 0; padding-bottom: 56.25%; background: linear-gradient(transparent, rgba(0, 0, 0, 0.4)), url("../images/banner.jpg") no-repeat center center/cover; position: relative; }
-#banner #text { padding-left: 40%; position: absolute; bottom: 50%; left: 50%; margin-left: -600px; text-align: center; -webkit-transform: translateY(75%); -ms-transform: translateY(75%); transform: translateY(75%); }
+#banner #text { padding-left: 40%; position: absolute; bottom: 39%; left: 50%; margin-left: -550px; text-align: center; -webkit-transform: translateY(75%); -ms-transform: translateY(75%); transform: translateY(75%); }
 #banner #text h2 { font: 600 64px/1 '3ds'; color: #fff; text-shadow: 0 9px 12px rgba(0, 0, 0, 0.4); margin-bottom: 18px; }
 #banner #text p { font: 18px/1.4 '3ds'; color: #fff; padding: 0 60px; }
 
@@ -216,6 +221,8 @@ h6 { font: normal 24px/1.2 sans-serif; color: #f00; }
 #white #icons li.active span { -webkit-transform: scale(1); -ms-transform: scale(1); transform: scale(1); }
 #white #icons li:hover span { -webkit-transform: scale(1); -ms-transform: scale(1); transform: scale(1); }
 #white #icons li p { position: relative; z-index: 2; }
+
+#colors { background-color: #FFA348; transition: background-color 0.25s; }
 
 .color { display: none; min-height: 398px; }
 .color .wrap { position: relative; min-height: 398px; padding: 90px 30px; }
@@ -252,12 +259,19 @@ h6 { font: normal 24px/1.2 sans-serif; color: #f00; }
 
 #form1 { position: relative; z-index: 10; max-width: 770px; margin: 40px auto 0; text-align: center; }
 #form1 .hide, #form1 label { display: none; }
-#form1 li { display: inline-block; width: 31.2%; }
+#form1 li { vertical-align: top; display: inline-block; width: 31.2%; }
 #form1 li#foli3 { margin: 0 1%; }
 #form1 li input, #form1 li div { width: 100%; display: block; }
 #form1 li input.field { padding: 0 20px; height: 43px; border-radius: 7px; border: 2px solid #C6C6C6; font: 16px/43px '3ds'; color: #3E9DD1; }
+#form1 li input.field.error { border-color: #E55758; }
 #form1 li.buttons { text-align: center; width: 100%; }
 #form1 li .btn { font-size: 17px; padding: 0 50px; width: auto; display: inline-block; }
+#form1 .cbox { text-align: left; width: 55%; margin-top: 20px; }
+#form1 .cbox label { display: block; position: relative; color: #7E7E7E; font-size: 14px; line-height: 1.5; }
+#form1 .cbox label span { display: block; width: 18px; height: 18px; border: 2px solid #C6C6C6; border-radius: 4px; position: absolute; top: 2px; left: -26px; background: #fff; transition: background 0.1s; }
+#form1 .cbox input { opacity: 0; visibility: hidden; height: 0; position: absolute; top: -9999px; left: -9999px; }
+#form1 .cbox input:checked ~ span { background: #E55758; }
+#form1 label.error { color: #E55758; font-weight: 400; margin-top: 5px; font-size: 12px; }
 
 /* != PLACEHOLDER ATTRIBUTE STYLES = input or textarea - placeholder="whatever" ===== */
 /* ::-webkit-input-placeholder { color: #aaa; } :-moz-placeholder           { color: #aaa; }

@@ -80,7 +80,14 @@
 /* !STYLES */
 /* ========================================================================= */
 
-	html, body {  }
+	html, body { font-family:'3ds', 'Lucida Sans', Lucida, Arial, sans-serif; }
+
+    a {
+        color:#3E9DD1;
+        &:hover {
+            color:#E55758;
+        }
+    }
 
 /* != SELECTION STYLES (Leaving these blank will show no indication of text selection) ===== */
 /*
@@ -196,9 +203,9 @@
         #text {
             padding-left:40%;
             position: absolute;
-            bottom:50%;
+            bottom:39%;
             left:50%;
-            margin-left:-600px;
+            margin-left:-550px;
             text-align:center;
             transform:translateY(75%);
             h2 {
@@ -305,7 +312,10 @@
             }
         }
     }
-
+    #colors {
+        background-color:#FFA348;
+        transition:background-color 0.25s;
+    }
     .color {
         display:none;
         min-height:398px;
@@ -459,6 +469,7 @@
             display:none;
         }
         li {
+            vertical-align: top;
             display:inline-block;
             width:31.2%;
             &#foli3 {
@@ -475,6 +486,9 @@
                 border:2px solid #C6C6C6;
                 font:16px/43px '3ds';
                 color:#3E9DD1;
+                &.error {
+                    border-color:#E55758;
+                }
             }
             &.buttons {
                 text-align:center;
@@ -486,6 +500,47 @@
                 width:auto;
                 display: inline-block;
             }
+        }
+        .cbox {
+            text-align:left;
+            width:55%;
+            margin-top:20px;
+            label {
+                display:block;
+                position: relative;
+                color:#7E7E7E;
+                font-size:14px;
+                line-height:1.5;
+                span {
+                    display:block;
+                    width:18px;
+                    height:18px;
+                    border:2px solid #C6C6C6;
+                    border-radius:4px;
+                    position: absolute;
+                    top:2px;
+                    left:-26px;
+                    background:#fff;
+                    transition:background 0.1s;
+                }
+            }
+            input {
+                opacity:0;
+                visibility: hidden;
+                height:0;
+                position:absolute;
+                top:-9999px;
+                left:-9999px;
+                &:checked ~ span {
+                    background:#E55758;
+                }
+            }
+        }
+        label.error {
+            color:#E55758;
+            font-weight:400;
+            margin-top:5px;
+            font-size:12px;
         }
     }
 

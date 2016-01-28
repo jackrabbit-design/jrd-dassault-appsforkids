@@ -88,7 +88,7 @@
     <div id="fb-root"></div>
     <header class="show-for-large-up clearfix">
         <div class="top-bar-in">
-            <div class="swLogo"><img src="ui/images/newredtranslogo.png"></div>
+            <div class="swLogo"><img src="ui/images/afk-logo.png"></div>
         </div>
     </header>
 
@@ -132,48 +132,50 @@
         </ul>
     </section>
 
-    <section class="color capture active" data-id="1">
-        <div class="wrap">
-            <h2>Capture It</h2>
-            <p>Capture ideas and start a design story using pictures, video and sound. Create inspiration boards, canvases and collages using any device. Kids can even use their smart phone to add&nbsp;content!</p>
-            <img src="ui/images/capture-img.png" alt="">
-        </div>
-    </section>
-    <section class="color shape" data-id="2">
-        <div class="wrap">
-            <h2>Shape It</h2>
-            <p>Shape ideas into 3D creations of any form. Anything a child can imagine, they can create with this intuitive and easy to use modelling&nbsp;tool.</p>
-            <img src="ui/images/shape-img.png" alt="">
-        </div>
-    </section>
-    <section class="color style" data-id="3">
-        <div class="wrap">
-            <h2>Style It</h2>
-            <p>Style the Shape It creations with color, stickers, backgrounds and more. Everyone loves painting, so we even made it possible to paint right onto the&nbsp;model!</p>
-            <img src="ui/images/style-img.png" alt="">
-        </div>
-    </section>
-    <section class="color mech" data-id="4">
-        <div class="wrap">
-            <h2>Mech It</h2>
-            <p>Mechanisms are made fun with touch friendly, snap together shapes that work like they are actually real. Make things move or draw amazing spiral art… who knew mechanisms could be so&nbsp;exciting!</p>
-            <img src="ui/images/mech-img.png" alt="">
-        </div>
-    </section>
-    <section class="color show" data-id="5">
-        <div class="wrap">
-            <h2>Show It</h2>
-            <p>Show off any creation made in SOLIDWORKS Apps for Kids and tell a story using fun interactive slide&nbsp;shows.</p>
-            <img src="ui/images/show-img.png" alt="">
-        </div>
-    </section>
-    <section class="color print" data-id="6">
-        <div class="wrap">
-            <h2>Print It</h2>
-            <p>Print a creation in 2D, 3D or one of the fun project based formats and make the creations come to&nbsp;life.</p>
-            <img src="ui/images/print-img.png" alt="">
-        </div>
-    </section>
+    <div id="colors">
+        <section class="color capture active" data-id="1">
+            <div class="wrap">
+                <h2>Capture It</h2>
+                <p>Capture ideas and start a design story using pictures, video and sound. Create inspiration boards, canvases and collages using any device. Kids can even use their smart phone to add&nbsp;content!</p>
+                <img src="ui/images/capture-img.png" alt="">
+            </div>
+        </section>
+        <section class="color shape" data-id="2">
+            <div class="wrap">
+                <h2>Shape It</h2>
+                <p>Shape ideas into 3D creations of any form. Anything a child can imagine, they can create with this intuitive and easy to use modelling&nbsp;tool.</p>
+                <img src="ui/images/shape-img.png" alt="">
+            </div>
+        </section>
+        <section class="color style" data-id="3">
+            <div class="wrap">
+                <h2>Style It</h2>
+                <p>Style the Shape It creations with color, stickers, backgrounds and more. Everyone loves painting, so we even made it possible to paint right onto the&nbsp;model!</p>
+                <img src="ui/images/style-img.png" alt="">
+            </div>
+        </section>
+        <section class="color mech" data-id="4">
+            <div class="wrap">
+                <h2>Mech It</h2>
+                <p>Mechanisms are made fun with touch friendly, snap together shapes that work like they are actually real. Make things move or draw amazing spiral art… who knew mechanisms could be so&nbsp;exciting!</p>
+                <img src="ui/images/mech-img.png" alt="">
+            </div>
+        </section>
+        <section class="color show" data-id="5">
+            <div class="wrap">
+                <h2>Show It</h2>
+                <p>Show off any creation made in SOLIDWORKS Apps for Kids and tell a story using fun interactive slide&nbsp;shows.</p>
+                <img src="ui/images/show-img.png" alt="">
+            </div>
+        </section>
+        <section class="color print" data-id="6">
+            <div class="wrap">
+                <h2>Print It</h2>
+                <p>Print a creation in 2D, 3D or one of the fun project based formats and make the creations come to&nbsp;life.</p>
+                <img src="ui/images/print-img.png" alt="">
+            </div>
+        </section>
+    </div>
 
     <section id="form">
         <h2>Ready to create?</h2>
@@ -186,7 +188,7 @@
         <img src="ui/images/footer_right2.png" alt="" class="anim r2">
         <img src="ui/images/footer_right3.png" alt="" class="anim r3">
 
-        <form id="form1" name="form1" class="wufoo topLabel page" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate
+        <!-- <form id="form1" name="form1" class="wufoo topLabel page" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post"
               action="https://swafk.wufoo.com/forms/z1e6qzwp1bojd1t/#public">
             <ul>
                 <li id="foli4" class="notranslate">
@@ -213,6 +215,23 @@
                         <input placeholder="Email Address" id="Field5" name="Field5" type="email" spellcheck="false" class="field text medium" value="" maxlength="255" tabindex="3" />
                     </div>
                 </li>
+                <li class="cbox">
+                    <label for="privacy">
+                        <input type="checkbox" name="privacy" id="privacy" />
+                        <span></span>
+                        To continue, you must agree to receive communications according to the Dassault Syst&egrave;mes Solidworks Corporation <a href="http://www.solidworks.com/sw/privacypolicy.htm" target="_blank">Privacy Policy</a>
+                        <span class="privacy-error"></span>
+                    </label>
+                </li>
+                <li class="cbox">
+                    <label for="over21">
+                        <input type="checkbox" name="over21" id="over21" />
+                        <span></span>
+                        I am at least 21 years old.
+                        <span class="over21-error"></span>
+                    </label>
+                </li>
+
                 <li class="buttons ">
                     <div>
                         <input id="saveForm" name="saveForm" class="btn red btTxt submit" type="submit" value="Sign Me Up"/>
@@ -225,7 +244,70 @@
                     <input type="hidden" id="idstamp" name="idstamp" value="XgdfSbZt64/wVEB7LSTpNSx65s9yGTqwp/PL30OsaD8=" />
                 </li>
             </ul>
+        </form> -->
+
+        <form id="form1" name="form1" class="wufoo topLabel page" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate
+              action="https://swafk.wufoo.com/forms/z1e6qzwp1bojd1t/#public">
+            <ul>
+                <li id="foli4" class="notranslate      ">
+                    <label class="desc" id="title4" for="Field4">
+                        First Name
+                        <span id="req_4" class="req">*</span>
+                    </label>
+                    <div>
+                        <input id="Field4" placeholder="First Name" name="Field4" type="text" class="field text medium" value="" maxlength="255" tabindex="1" onkeyup=""       required />
+                    </div>
+                </li>
+                <li id="foli3" class="notranslate      ">
+                    <label class="desc" id="title3" for="Field3">
+                    Last Name
+                        <span id="req_3" class="req">*</span>
+                    </label>
+                    <div>
+                        <input id="Field3" placeholder="Last Name"  name="Field3" type="text" class="field text medium" value="" maxlength="255" tabindex="2" onkeyup=""       required />
+                    </div>
+                </li>
+                <li id="foli5" class="notranslate      ">
+                    <label class="desc" id="title5" for="Field5">
+                    Email Address
+                        <span id="req_5" class="req">*</span>
+                    </label>
+                    <div>
+                        <input id="Field5" placeholder="Email Address"  name="Field5" type="email" spellcheck="false" class="field text medium" value="" maxlength="255" tabindex="3"       required />
+                    </div>
+                </li>
+                <li id="foli7" class="notranslate cbox">
+
+                    <label for="Field7">
+                        <input type="checkbox" name="Field7" id="Field7" />
+                        <span></span>
+                        To continue, you must agree to receive communications according to the Dassault Syst&egrave;mes Solidworks Corporation <a href="http://www.solidworks.com/sw/privacypolicy.htm" target="_blank">Privacy Policy</a>.
+                    </label>
+
+                </li>
+                <li id="foli107" class="notranslate cbox">
+
+                    <label for="Field107">
+                        <input type="checkbox" name="Field107" id="Field107" />
+                        <span></span>
+                        I am at least 21 years old.
+                    </label>
+
+                </li>
+                <li class="buttons ">
+                    <div>
+                        <input id="saveForm" name="saveForm" class="btTxt btn red submit"
+                        type="submit" value="Submit" />
+                    </div>
+                </li>
+                <li class="hide">
+                    <label for="comment">Do Not Fill This Out</label>
+                    <textarea name="comment" id="comment" rows="1" cols="1"></textarea>
+                    <input type="hidden" id="idstamp" name="idstamp" value="XgdfSbZt64/wVEB7LSTpNSx65s9yGTqwp/PL30OsaD8=" />
+                </li>
+            </ul>
         </form>
+
     </section>
 
     <!-- Section - Social
@@ -240,11 +322,11 @@
                     </h2>
                     <!--<p class="img"></p>-->
                     <ul>
-                        <li><a href="https://www.facebook.com/solidworks" title="Facebook" class="facebook"></a></li>
-                        <li><a href="https://twitter.com/solidworks" title="Twitter" class="twitter"></a></li>
-                        <li><a href="https://plus.google.com/+solidworks/posts" title="Google plus" class="googleplus"></a></li>
-                        <li><a href="https://www.youtube.com/user/SolidWorks" title="Video" class="video"></a></li>
-                        <li><a href="https://www.linkedin.com/company/solidworks" title="Linked in" class="linkedin"></a></li>
+                        <li><a href="https://www.facebook.com/solidworks" title="Facebook" target="_blank" class="facebook"></a></li>
+                        <li><a href="https://twitter.com/solidworks" title="Twitter" target="_blank" class="twitter"></a></li>
+                        <li><a href="https://plus.google.com/+solidworks/posts" title="Google plus" target="_blank" class="googleplus"></a></li>
+                        <li><a href="https://www.youtube.com/user/SolidWorks" title="Video" target="_blank" class="video"></a></li>
+                        <li><a href="https://www.linkedin.com/company/solidworks" title="Linked in" target="_blank" class="linkedin"></a></li>
                     </ul>
                     <p>SOLIDWORKS online communities – connect, comment, learn, inform.</p>
                 </aside>
@@ -254,10 +336,10 @@
     <footer>
         <div class="row">
             <p>
-                <a href="/sw/termsofuse.html" target="_blank">Terms of Use</a> |
-                <a href="/sw/privacypolicy.htm" target="_blank">Privacy</a> |
-                <a href="/sw/piracyprevention.htm" target="_blank">Piracy Prevention</a> |
-                <a href="/sw/eula.htm" target="_blank">License Agreement</a>
+                <a href="http://www.solidworks.com/sw/termsofuse.html" target="_blank">Terms of Use</a> |
+                <a href="http://www.solidworks.com/sw/privacypolicy.htm" target="_blank">Privacy</a> |
+                <a href="http://www.solidworks.com/sw/piracyprevention.htm" target="_blank">Piracy Prevention</a> |
+                <a href="http://www.solidworks.com/sw/eula.htm" target="_blank">License Agreement</a>
                 <br class="show_mobile1">
                   &copy;2016 Dassault Systèmes SolidWorks Corporation
             </p>
