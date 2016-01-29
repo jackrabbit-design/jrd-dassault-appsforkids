@@ -200,6 +200,7 @@
         padding-bottom:percentage(9/16);
         background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.4)), url('../images/banner.jpg') no-repeat center center / cover;
         position: relative;
+        max-height:768px;
         #text {
             padding-left:40%;
             position: absolute;
@@ -421,6 +422,10 @@
             position: relative;
             z-index:10;
             padding:0 30px;
+            &.notice {
+                font-size:14px;
+                margin-top:20px;
+            }
         }
     }
 
@@ -463,7 +468,7 @@
         position: relative;
         z-index:10;
         max-width:770px;
-        margin:40px auto 0;
+        margin:10px auto 0;
         text-align:center;
         .hide, label {
             display:none;
@@ -499,6 +504,15 @@
                 padding:0 50px;
                 width:auto;
                 display: inline-block;
+                &:disabled {
+                    background:#7E7E7E;
+                    border-color:#7E7E7E;
+                    &:hover {
+                        color:#fff;
+                        background:#8e8e8e;
+                        border-color:#8e8e8e;
+                    }
+                }
             }
         }
         .cbox {
@@ -543,7 +557,6 @@
             font-size:12px;
         }
     }
-
 
 
 /* != PLACEHOLDER ATTRIBUTE STYLES = input or textarea - placeholder="whatever" ===== */
@@ -724,6 +737,10 @@
         width:100%;
         padding:6px 30px;
         margin:0 !important;
+        &.cbox {
+            width:100%;
+            padding: 6px 30px 6px 56px;
+        }
     }
 }
 
@@ -1145,6 +1162,10 @@
     padding: 6px 12px 6px 30px;
     .swLogo {
         float: left;
+        img {
+            width:282px;
+            height:auto;
+        }
     }
 }
 

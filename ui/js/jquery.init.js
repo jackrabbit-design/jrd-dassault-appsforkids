@@ -5,9 +5,8 @@
 jQuery(function($){
 
 
-/*
     $('#form1').validate({
-        submitHandler: function(form) {
+        submitHandler: function(form){
             form.submit();
         },
         rules: {
@@ -26,8 +25,23 @@ jQuery(function($){
                 minlength: 1
             }
         }
+    });
+
+    $('#form1 input').on('keyup blur click', function () { // fires on every keyup & blur
+        if ($('#form1').valid()) {                   // checks form for validity
+            $('#saveForm').prop('disabled', false);        // enables button
+        } else {
+            $('#saveForm').prop('disabled', 'disabled');   // disables button
+        }
+    });
+
+    $('a.signup').on('click',function(e){
+        e.preventDefault();
+        $('html,body').animate({
+            scrollTop: $('#form').offset().top
+        }, 500)
+        return false;
     })
-*/
 
     // PARALLAX
 
@@ -82,6 +96,7 @@ jQuery(function($){
             'OTransform'      : 'translate3d(0, ' + neg / 1 + 'px, 0)',
             'transform'       : 'translate3d(0, ' + neg / 1 + 'px, 0)',
         });
+
     });
 
     $('#icons li').on('click',function(){
@@ -103,6 +118,11 @@ jQuery(function($){
             $('#banner #text').css('padding-left',p+'px');
         }else{
             $('#banner #text').removeAttr('style');
+        }
+
+        $("#banner").css('padding-bottom', (9/16) * 100 + '%' );
+        if($("#banner").outerHeight() > 800){
+            $("#banner").css('padding-bottom','800px');
         }
     })
 
