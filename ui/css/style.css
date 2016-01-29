@@ -203,7 +203,7 @@ h6 { font: normal 24px/1.2 sans-serif; color: #f00; }
 .btn .arrow-left { display: inline-block; border: 6px solid transparent; border-left: 9px solid #fff; border-right-width: 0; position: relative; top: 1px; transition: all 0.2s; }
 .btn + .btn { margin-left: 5px; }
 
-#banner { height: 0; padding-bottom: 56.25%; background: linear-gradient(transparent, rgba(0, 0, 0, 0.4)), url("../images/banner.jpg") no-repeat center center/cover; position: relative; max-height: 768px; }
+#banner { height: 0; padding-bottom: 56.25%; background: linear-gradient(transparent, rgba(0, 0, 0, 0.4)), url("../images/banner.jpg") no-repeat center center/cover; position: relative; max-height: 768px; overflow: hidden; }
 #banner #text { padding-left: 40%; position: absolute; bottom: 39%; left: 50%; margin-left: -550px; text-align: center; -webkit-transform: translateY(75%); -ms-transform: translateY(75%); transform: translateY(75%); }
 #banner #text h2 { font: 600 64px/1 '3ds'; color: #fff; text-shadow: 0 9px 12px rgba(0, 0, 0, 0.4); margin-bottom: 18px; }
 #banner #text p { font: 18px/1.4 '3ds'; color: #fff; padding: 0 60px; }

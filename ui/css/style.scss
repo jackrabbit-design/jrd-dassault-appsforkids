@@ -201,6 +201,7 @@
         background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.4)), url('../images/banner.jpg') no-repeat center center / cover;
         position: relative;
         max-height:768px;
+        overflow: hidden;
         #text {
             padding-left:40%;
             position: absolute;
