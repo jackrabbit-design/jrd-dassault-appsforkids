@@ -28,10 +28,16 @@ jQuery(function($){
     });
 
     $('#form1 input').on('keyup blur click', function () { // fires on every keyup & blur
-        if ($('#form1').valid()) {                   // checks form for validity
-            $('#saveForm').prop('disabled', false);        // enables button
+        if(
+            $("#Field4").val() != '' &&
+            $("#Field3").val() != '' &&
+            $("#Field5").val() != '' &&
+            $("#Field7").is(":checked") &&
+            $("#Field107").is(":checked")
+        ){
+            $('#saveForm').removeClass('disabled');        // enables button
         } else {
-            $('#saveForm').prop('disabled', 'disabled');   // disables button
+            $('#saveForm').addClass('disabled');   // disables button
         }
     });
 
@@ -40,6 +46,14 @@ jQuery(function($){
         $('html,body').animate({
             scrollTop: $('#form').offset().top
         }, 500)
+        return false;
+    })
+
+    $('a.play').on('click',function(e){
+        e.preventDefault();
+        $(this).text('Loading...');
+        var html = "<div class='embed-container'><iframe src='http://www.youtube.com/embed/M7lc1UVf-VE?autoplay=1&rel=0&showinfo=0&hd=1&autohide=1&color=white&controls=0' frameborder='0'></iframe></div>";
+        $('#banner').append(html);
         return false;
     })
 
