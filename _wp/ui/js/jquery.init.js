@@ -52,11 +52,20 @@ jQuery(function($){
     $('a.play').on('click',function(e){
         e.preventDefault();
         $(this).text('Loading...');
-        var html = "<div class='embed-container'><iframe src='http://www.youtube.com/embed/KM-iwZsBqo0?autoplay=1&rel=0&showinfo=0&hd=1&autohide=1&color=white&controls=0' frameborder='0'></iframe></div>";
+        var html = "<div class='embed-container'><iframe src='http://www.youtube.com/embed/a6VIWL35mvo?autoplay=1&rel=0&showinfo=0&hd=1&autohide=1&color=white&controls=0' frameborder='0'></iframe></div>";
         $('#banner').append(html);
         $("#banner").css('padding-bottom', (9/16) * 100 + '%' );
         return false;
-    })
+    });
+
+    console.log(location.hash);
+    if(location.hash == '#success'){
+        $('#form-main').hide();
+        $('#form-thanks').show();
+        $('html,body').animate({
+            scrollTop: $('#form-thanks').offset().top
+        }, 500);
+    }
 
     // PARALLAX
 

@@ -214,136 +214,85 @@
     </div>
 
     <section id="form">
-        <h2>Ready to create?</h2>
-        <p>If you are interested in learning more about SOLIDWORKS Apps for Kids or know of a young person who would like to create, invent, and shape the future of this product, please sign up here:</p>
-        <p class="notice"><b>*</b> all fields are required.</p>
-        <img src="/ui/images/footer_left1.png" alt="" class="anim l1">
-        <img src="/ui/images/footer_left2.png" alt="" class="anim l2">
-        <img src="/ui/images/footer_left3.png" alt="" class="anim l3">
+        <div id="form-main">
+            <h2>Ready to create?</h2>
+            <p>If you are interested in learning more about SOLIDWORKS Apps for Kids or know of a young person who would like to create, invent, and shape the future of this product, please sign up here:</p>
+            <p class="notice"><b>*</b> all fields are required.</p>
+            <img src="/ui/images/footer_left1.png" alt="" class="anim l1">
+            <img src="/ui/images/footer_left2.png" alt="" class="anim l2">
+            <img src="/ui/images/footer_left3.png" alt="" class="anim l3">
 
-        <img src="/ui/images/footer_right1.png" alt="" class="anim r1">
-        <img src="/ui/images/footer_right2.png" alt="" class="anim r2">
-        <img src="/ui/images/footer_right3.png" alt="" class="anim r3">
+            <img src="/ui/images/footer_right1.png" alt="" class="anim r1">
+            <img src="/ui/images/footer_right2.png" alt="" class="anim r2">
+            <img src="/ui/images/footer_right3.png" alt="" class="anim r3">
 
-        <!-- <form id="form1" name="form1" class="wufoo topLabel page" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post"
-              action="https://swafk.wufoo.com/forms/z1e6qzwp1bojd1t/#public">
-            <ul>
-                <li id="foli4" class="notranslate">
-                    <label class="desc" id="title4" for="Field4">
-                        First Name
-                    </label>
-                    <div>
-                        <input placeholder="First Name" id="Field4" name="Field4" type="text" class="field text medium" value="" maxlength="255" tabindex="1" onkeyup="" />
-                    </div>
-                </li>
-                <li id="foli3" class="notranslate">
-                    <label class="desc" id="title3" for="Field3">
+
+            <form id="form1" name="form1" class="wufoo topLabel page" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post"
+                  action="https://swafk.wufoo.com/forms/z1e6qzwp1bojd1t/#public">
+                <ul>
+                    <li id="foli4" class="notranslate      ">
+                        <label class="desc" id="title4" for="Field4">
+                            First Name
+                            <span id="req_4" class="req">*</span>
+                        </label>
+                        <div>
+                            <input id="Field4" placeholder="First Name" name="Field4" type="text" class="field text medium" value="" maxlength="255" tabindex="1" onkeyup="" />
+                        </div>
+                    </li>
+                    <li id="foli3" class="notranslate      ">
+                        <label class="desc" id="title3" for="Field3">
                         Last Name
-                    </label>
-                    <div>
-                        <input placeholder="Last Name" id="Field3" name="Field3" type="text" class="field text medium" value="" maxlength="255" tabindex="2" onkeyup="" />
-                    </div>
-                </li>
-                <li id="foli5" class="notranslate">
-                    <label class="desc" id="title5" for="Field5">
+                            <span id="req_3" class="req">*</span>
+                        </label>
+                        <div>
+                            <input id="Field3" placeholder="Last Name"  name="Field3" type="text" class="field text medium" value="" maxlength="255" tabindex="2" onkeyup="" />
+                        </div>
+                    </li>
+                    <li id="foli5" class="notranslate      ">
+                        <label class="desc" id="title5" for="Field5">
                         Email Address
-                    </label>
-                    <div>
-                        <input placeholder="Email Address" id="Field5" name="Field5" type="email" spellcheck="false" class="field text medium" value="" maxlength="255" tabindex="3" />
-                    </div>
-                </li>
-                <li class="cbox">
-                    <label for="privacy">
-                        <input type="checkbox" name="privacy" id="privacy" />
-                        <span></span>
-                        To continue, you must agree to receive communications according to the Dassault Syst&egrave;mes Solidworks Corporation <a href="http://www.solidworks.com/sw/privacypolicy.htm" target="_blank">Privacy Policy</a>
-                        <span class="privacy-error"></span>
-                    </label>
-                </li>
-                <li class="cbox">
-                    <label for="over21">
-                        <input type="checkbox" name="over21" id="over21" />
-                        <span></span>
-                        I am at least 21 years old.
-                        <span class="over21-error"></span>
-                    </label>
-                </li>
+                            <span id="req_5" class="req">*</span>
+                        </label>
+                        <div>
+                            <input id="Field5" placeholder="Email Address"  name="Field5" type="email" spellcheck="false" class="field text medium" value="" maxlength="255" tabindex="3" />
+                        </div>
+                    </li>
+                    <li id="foli7" class="notranslate cbox">
 
-                <li class="buttons ">
-                    <div>
-                        <input id="saveForm" name="saveForm" class="btn red btTxt submit" type="submit" value="Sign Me Up"/>
-                    </div>
-                </li>
+                        <label for="Field7">
+                            <input type="checkbox" name="Field7" id="Field7" />
+                            <span></span>
+                            To continue, you must agree to receive communications according to the Dassault Syst&egrave;mes SolidWorks Corporation <a href="http://www.solidworks.com/sw/privacypolicy.htm" target="_blank">Privacy Policy</a>.
+                        </label>
 
-                <li class="hide">
-                    <label for="comment">Do Not Fill This Out</label>
-                    <textarea name="comment" id="comment" rows="1" cols="1"></textarea>
-                    <input type="hidden" id="idstamp" name="idstamp" value="XgdfSbZt64/wVEB7LSTpNSx65s9yGTqwp/PL30OsaD8=" />
-                </li>
-            </ul>
-        </form> -->
+                    </li>
+                    <li id="foli107" class="notranslate cbox">
 
-        <form id="form1" name="form1" class="wufoo topLabel page" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post"
-              action="https://swafk.wufoo.com/forms/z1e6qzwp1bojd1t/#public">
-            <ul>
-                <li id="foli4" class="notranslate      ">
-                    <label class="desc" id="title4" for="Field4">
-                        First Name
-                        <span id="req_4" class="req">*</span>
-                    </label>
-                    <div>
-                        <input id="Field4" placeholder="First Name" name="Field4" type="text" class="field text medium" value="" maxlength="255" tabindex="1" onkeyup="" />
-                    </div>
-                </li>
-                <li id="foli3" class="notranslate      ">
-                    <label class="desc" id="title3" for="Field3">
-                    Last Name
-                        <span id="req_3" class="req">*</span>
-                    </label>
-                    <div>
-                        <input id="Field3" placeholder="Last Name"  name="Field3" type="text" class="field text medium" value="" maxlength="255" tabindex="2" onkeyup="" />
-                    </div>
-                </li>
-                <li id="foli5" class="notranslate      ">
-                    <label class="desc" id="title5" for="Field5">
-                    Email Address
-                        <span id="req_5" class="req">*</span>
-                    </label>
-                    <div>
-                        <input id="Field5" placeholder="Email Address"  name="Field5" type="email" spellcheck="false" class="field text medium" value="" maxlength="255" tabindex="3" />
-                    </div>
-                </li>
-                <li id="foli7" class="notranslate cbox">
+                        <label for="Field107">
+                            <input type="checkbox" name="Field107" id="Field107" />
+                            <span></span>
+                            I am at least 21 years old.
+                        </label>
 
-                    <label for="Field7">
-                        <input type="checkbox" name="Field7" id="Field7" />
-                        <span></span>
-                        To continue, you must agree to receive communications according to the Dassault Syst&egrave;mes SolidWorks Corporation <a href="http://www.solidworks.com/sw/privacypolicy.htm" target="_blank">Privacy Policy</a>.
-                    </label>
-
-                </li>
-                <li id="foli107" class="notranslate cbox">
-
-                    <label for="Field107">
-                        <input type="checkbox" name="Field107" id="Field107" />
-                        <span></span>
-                        I am at least 21 years old.
-                    </label>
-
-                </li>
-                <li class="buttons ">
-                    <div>
-                        <input id="saveForm" name="saveForm" class="btTxt btn red disabled submit"
-                        type="submit"  value="Submit" />
-                    </div>
-                </li>
-                <li class="hide">
-                    <label for="comment">Do Not Fill This Out</label>
-                    <textarea name="comment" id="comment" rows="1" cols="1"></textarea>
-                    <input type="hidden" id="idstamp" name="idstamp" value="XgdfSbZt64/wVEB7LSTpNSx65s9yGTqwp/PL30OsaD8=" />
-                </li>
-            </ul>
-        </form>
+                    </li>
+                    <li class="buttons ">
+                        <div>
+                            <input id="saveForm" name="saveForm" class="btTxt btn red disabled submit"
+                            type="submit"  value="Submit" />
+                        </div>
+                    </li>
+                    <li class="hide">
+                        <label for="comment">Do Not Fill This Out</label>
+                        <textarea name="comment" id="comment" rows="1" cols="1"></textarea>
+                        <input type="hidden" id="idstamp" name="idstamp" value="XgdfSbZt64/wVEB7LSTpNSx65s9yGTqwp/PL30OsaD8=" />
+                    </li>
+                </ul>
+            </form>
+        </div>
+        <div id="form-thanks" style="display:none;">
+            <h2>Thank you for your interest!</h2>
+            <p style="max-width:620px;">Thank you for signing up to receive more information about SOLIDWORKS Apps for Kids. A confirmation e-mail will be sent to you shortly.</p>
+        </div>
 
     </section>
 
@@ -359,8 +308,8 @@
                     </h2>
                     <!--<p class="img"></p>-->
                     <ul>
-                        <li><a href="https://www.facebook.com/solidworks" title="Facebook" target="_blank" class="facebook"></a></li>
-                        <li><a href="https://twitter.com/solidworks" title="Twitter" target="_blank" class="twitter"></a></li>
+                        <li><a href="https://www.facebook.com/SolidWorksEducation/" title="Facebook" target="_blank" class="facebook"></a></li>
+                        <li><a href="https://twitter.com/solidworksedu" title="Twitter" target="_blank" class="twitter"></a></li>
                         <li><a href="https://plus.google.com/+solidworks/posts" title="Google plus" target="_blank" class="googleplus"></a></li>
                         <br class="show_mobile1">
                         <li><a href="https://www.youtube.com/user/SolidWorks" title="Video" target="_blank" class="video"></a></li>

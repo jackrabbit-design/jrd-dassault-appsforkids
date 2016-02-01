@@ -343,7 +343,7 @@ input[type=submit], button { display: inline-block; cursor: pointer; }
 .ds .ds_inner { padding: 0 15px; height: 55px; }
 .ds .ds_hide { position: absolute; clip: rect(1px 1px 1px 1px); clip: rect(1px, 1px, 1px, 1px); }
 .ds .ds_logo { float: left; padding: 6px 0; }
-.ds .ds_logo a { margin: 0; background: url("../images/header3ds.png") 0 -88px transparent no-repeat; width: 132px; height: 44px; float: left; }
+.ds .ds_logo a { margin: 0; background: url("../images/ds_logo.png") no-repeat; width: 160px; height: 45px; float: left; background-position: 0 0 !important; }
 .ds .ds_compass { float: right; width: 42px; height: 55px; padding: 0; margin-left: 7px; }
 .ds .ds_compass a { margin: 0; background: url("../images/header3ds.png") -530px 0 transparent no-repeat; width: 42px; height: 55px; display: block; }
 .ds .ds_id { float: right; width: 200px; height: 55px; padding: 6px 0; background-color: #305164; }

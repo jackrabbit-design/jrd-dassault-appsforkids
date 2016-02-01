@@ -870,10 +870,11 @@
         padding: 6px 0;
         a {
             margin: 0;
-            background: url('../images/header3ds.png') 0 -88px transparent no-repeat;
-            width: 132px;
-            height: 44px;
+            background: url('../images/ds_logo.png') no-repeat;
+            width: 160px;
+            height: 45px;
             float: left;
+            background-position:0 0 !important;
         }
     }
     .ds_compass {
